@@ -84,7 +84,7 @@ console.log(validChar)
 // if it is true, choose a random value from that array and add it to validChar variable
 // keep looping by adding 1 every loop until passwordLength is achived
 // once is done, return the variable pass with all the values 
-
+// check the pass variable 
 for (let i = 0; i < passwordLength; i++) {
 pass += generatePassword.validChar(Math.floor(Math.random() * passwordLength.length));
 }
@@ -101,5 +101,5 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Add event listener to generate button:
 generateBtn.addEventListener("click", writePassword);
