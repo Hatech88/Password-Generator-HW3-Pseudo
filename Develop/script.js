@@ -22,6 +22,7 @@ function generatePassword(){
   var pass = '';
   var passwordLength = window.prompt("Enter your password length:");
 
+
 // if statement for the length. Should we add another function just for it?
 if(!passwordLength){
   alert("You must enter a number");
@@ -79,14 +80,15 @@ console.log(validChar)
 }
 
 
-// I need to create the loop
+// I need to create the for loops
 // start with i = 0, go through loop one, check the criteria selected by user
 // if it is true, choose a random value from that array and add it to validChar variable
 // keep looping by adding 1 every loop until passwordLength is achived
 // once is done, return the variable pass with all the values 
 // check the pass variable 
+// for ([intitialization]; [condtion]; [final-expression]) {}
 for (let i = 0; i < passwordLength; i++) {
-pass += generatePassword.validChar(Math.floor(Math.random() * passwordLength.length));
+pass +=validChar[Math.floor(Math.random() * validChar.length)];
 }
 return pass;
 
@@ -96,7 +98,6 @@ return pass;
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
 }
