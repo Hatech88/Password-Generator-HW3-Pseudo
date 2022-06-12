@@ -13,10 +13,12 @@ I assigned variables to the criteria and used Windeow.confirm to display it on t
 I add the for loops to iterate over the arrays along with Math.random to choose random elements form the arrays.
 At the end, we used another function with an event listener to display the password screen after the button has been clicked and user chose the criteria. 
 
-URL: https://hatech88.github.io/Password-Generator-HW3-Pseudo/ 
+URL: https://hatech88.github.io/Password-Generator-HW3-Pseudo/
+
+[a link] (https://hatech88.github.io/Password-Generator-HW3-Pseudo/)
+
 
 ![Alt text](/Assests/Password%20App.jpg "Password Generator")
-
 
 
 
